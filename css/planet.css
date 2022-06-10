@@ -1,0 +1,57 @@
+.result-content section {
+    grid-row: 1;
+    grid-column: 2/4;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.result-content section :hover {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.603), 0 0 30px #828effb4, 0 0 40px rgba(130, 142, 255, 0.506), 0 0 60px rgba(130, 142, 255, 0.306);
+    transition: .3s ease-in-out;
+}
+
+.result-content section .earth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate();
+    margin: auto;
+    width: 159px;
+    height: 159px;
+    background: url(../img/earth.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000, 0 0 30px rgba(130, 142, 255, 0.706);
+    animation: animate 7s linear infinite;
+}
+ 
+.result-content section .earth .btn-earth{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #828fff07;
+    color: aquamarine;
+    font-size: 2.5em;
+    border-radius: 50%;
+    opacity: 0;
+}
+.result-content section .earth .btn-earth:hover{
+    opacity: .5;
+}
+
+.result-content section .earth .btn-earth:active{
+    text-shadow: 0 0 10px rgb(37, 37, 37);
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -318px 0;
+    }
+}

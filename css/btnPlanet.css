@@ -1,0 +1,54 @@
+.form-content .button-content .btn:hover {
+    filter: brightness(1.2);
+}
+
+.form-content .button-content .btn:active {
+    border: 3px outset #fff !important;
+    text-shadow: 0 0 5px #222;
+    transition: all .2s ease-out;
+}
+
+#Mercurio {
+    background-color: #942424;
+    border-bottom: 8px solid #6d1e1e;
+}
+
+#Venus {
+    background-color: #27b456;
+    border-bottom: 8px solid #1d9b47;
+}
+
+#Luna {
+    background-color: #848da0;
+    border-bottom: 8px solid #6e7583;
+}
+
+#Marte {
+    background-color: #b61616;
+    border-bottom: 8px solid #911515;
+}
+
+#Jupiter {
+    background-color: #bd2697;
+    border-bottom: 8px solid #aa1c87;
+}
+
+#Saturno {
+    background-color: #17d4ab;
+    border-bottom: 8px solid #1b9181;
+}
+
+#Urano {
+    background-color: #339fcd;
+    border-bottom: 8px solid #2383ac;
+}
+
+#Neptuno {
+    background-color: #3c2ec1;
+    border-bottom: 8px solid #291d92;
+}
+
+#Pluton {
+    background-color: #b89375;
+    border-bottom: 8px solid #321c0f;
+}
