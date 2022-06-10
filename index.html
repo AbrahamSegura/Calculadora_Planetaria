@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="calculadora-planetaria.vercel.app">
+    <title>Calculadora Planetaria</title>
+    <!------------------style css----------------------->
+    <link rel="stylesheet" href="css/main.css">
+    <!-------------------planet------------------------->
+    <link rel="stylesheet" href="css/planet.css">
+    <!-----------------btnPlanet------------------------>
+    <link rel="stylesheet" href="css/btnPlanet.css">
+    <!------------------footer-------------------------->
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <header>
+        <img src="/public/ms-icon-70x70.png" alt="calculadora-planetaria">
+        <h1>Cambia tu peso</h1>
+        <h4>Tu peso en otro planeta es diferente</h4>
+    </header>
+    <div class="conteiner">
+        <div class="form-content">
+            <form id="form">
+                <input id="input-form" type="number" placeholder="Escribe tu peso" autofocus>
+                <div class="button-content"></div>
+        </div>
+        </form>
+        <div class="result-content">
+            <section class="earth-content">
+                <div class="earth">
+                    <button class="btn-earth">CLICK</button>
+                </div>
+            </section>
+            <p id="result" class="result"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="about-content">
+            <h3>About</h3>
+            <p class="about">Estas es una pagina diseña principalmente para entretenimiento, como tambien para ayudar a
+                los desarrolladores de videojuegos para personalizar sus fisicas y algun estudiante con su tarea</p>
+        </div>
+        <div class="next-content">
+            <h3>Proximamente...</h3>
+            <ul>
+                <li>Integracion de React</li>
+                <li>Cuentas personales</li>
+                <li>Creacion de planetas personalizados</li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
