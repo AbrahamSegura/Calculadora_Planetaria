@@ -36,7 +36,7 @@ addEventListener('DOMContentLoaded', () => {
         if (Peso <= 0) {
             return result.innerHTML = "Introduce un peso valido"
         }
-        result.innerHTML = `Tu peso en ${submiter} es: ${change(peso, submiter, gravedad)}Kg`;
+        result.innerHTML = `Tu peso en ${submiter} es: ${change(Peso, submiter, gravedad)}Kg`;
     })
     //---------------------------------------------
     btnEarth.addEventListener('click', (e) => {
