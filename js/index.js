@@ -1,3 +1,6 @@
+//--------------imports-------------------------
+import change from "./chage.js"
+import createButton from "./createButton.js"
 //--------------herpers-------------------------
 const $ = select => document.querySelector(select)
 //--------------elements------------------------
@@ -5,7 +8,6 @@ const result = $('.result')
 const form = $('#form')
 const buttonContent = $('.button-content')
 const btnEarth = $('.btn-earth')
-const inputForm = $('#input-form')
 //----------------class-------------------------
 class Gravedad {
     constructor(p, a) {
@@ -48,7 +50,7 @@ addEventListener('DOMContentLoaded', () => {
 
 
     //---------------------------------------------
-    btnEarth.addEventListener('click', (e) => {
+    btnEarth.addEventListener('click', () => {
         const Peso = form['input-form'].value
 
         if (Peso <= 0) {
@@ -57,20 +59,3 @@ addEventListener('DOMContentLoaded', () => {
         result.innerHTML = `Tu peso en La Tierra es: ${Peso}Kg`
     })
 })
-//---------------------------------------------
-function createButton(id) {
-    const btn = document.createElement('button')
-    const planeta = id
-    const text = document.createTextNode(`${planeta}`)
-    btn.id = planeta
-    btn.className = 'btn'
-    btn.appendChild(text)
-    return btn
-}
-function change(p, id, listId) {
-    const earth = 9.8
-    const planet = listId.filter(x => x.planeta === id)
-    const planetAcc = planet[0].aceleracion
-    const change = parseFloat((p / earth) * planetAcc)
-    return change
-}
