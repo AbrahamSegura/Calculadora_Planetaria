@@ -24,10 +24,12 @@ gravedad.push(new Gravedad('Pluton', 0.67));
 
 addEventListener('DOMContentLoaded', () => {
     let fragment = document.createDocumentFragment()
-    for (let i = 0; i < gravedad.length; i++) {
-        const btn = createButton(gravedad[i].planeta)
-        fragment.appendChild(btn)
-    }
+    gravedad.map(({ planeta }) => fragment.appendChild(createButton(planeta)))
+
+    // for (let i = 0; i < gravedad.length; i++) {
+    //     const btn = createButton(gravedad[i].planeta)
+    //     fragment.appendChild(btn)
+    // }
     buttonContent.appendChild(fragment)
     //---------------------------------------------
     form.addEventListener('submit', e => {
