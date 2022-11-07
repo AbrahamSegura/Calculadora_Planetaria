@@ -1,8 +1,10 @@
-const result = document.querySelector('.result')
-const form = document.getElementById('form')
-const buttonContent = document.querySelector('.button-content');
-const btnEarth = document.querySelector('.btn-earth');
-const inputForm = document.getElementById('input-form')
+const $ = select => document.querySelector(select)
+
+const result = $('.result')
+const form = $('#form')
+const buttonContent = $('.button-content');
+const btnEarth = $('.btn-earth');
+const inputForm = $('#input-form')
 class Gravedad {
     constructor(p, a) {
         this.planeta = p;
