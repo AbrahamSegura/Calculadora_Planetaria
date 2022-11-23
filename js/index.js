@@ -30,14 +30,10 @@ gravedad.push(new Gravedad('Pluton', 0.67))
 addEventListener('DOMContentLoaded', () => {
     let fragment = document.createDocumentFragment()
     gravedad.map(({ planeta }) => fragment.appendChild(createButton(planeta)))
-
-    // for (let i = 0 i < gravedad.length i++) {
-    //     const btn = createButton(gravedad[i].planeta)
-    //     fragment.appendChild(btn)
-    // }
     buttonContent.appendChild(fragment)
 
 
+    //-------------submit event---------------------
     form.addEventListener('submit', e => {
         e.preventDefault()
         const Peso = form['input-form'].value
@@ -49,7 +45,7 @@ addEventListener('DOMContentLoaded', () => {
     })
 
 
-    //---------------------------------------------
+    //-----------earth button event-------------------
     btnEarth.addEventListener('click', () => {
         const Peso = form['input-form'].value
 
